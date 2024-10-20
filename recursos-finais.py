@@ -60,13 +60,13 @@ print(f'  ')
 # Gerenciamento de contexto com with
 
 try:
-    manipulador = open('C:\\Users\\caval\\source\\Python-Projects\\teste-arquivos\\frutas.dat', 'r', encoding='utf-8')
+    manipulador = open('C:\\Users\\caval\\source\\Python-Projects\\python-from-zero-to-advanced\\teste-arquivos\\frutas.dat', 'r', encoding='utf-8')
     print(manipulador.read())
 except IOError:
     print(f'Não foi possível abrir o arquivo.')
 else:
     manipulador.close()
     
-with open('C:\\Users\\caval\\source\\Python-Projects\\teste-arquivos\\frutas.dat', 'r', encoding='utf-8') as a:
+with open('C:\\Users\\caval\\source\\Python-Projects\\python-from-zero-to-advanced\\teste-arquivos\\frutas.dat', 'r', encoding='utf-8') as a:
     for linha in a:
         print(linha.rstrip())
